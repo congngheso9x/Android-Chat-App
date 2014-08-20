@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId "bb.apps.firstapp"
+        minSdkVersion 16
+        targetSdkVersion 19
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    compileSdkVersion 16
+}
+
+dependencies {
+}
